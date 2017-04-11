@@ -1,0 +1,201 @@
+[
+    {
+        "name": "symfony/translation",
+        "version": "v2.7.6",
+        "version_normalized": "2.7.6.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/translation.git",
+            "reference": "6ccd9289ec1c71d01a49d83480de3b5293ce30c8"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/translation/zipball/6ccd9289ec1c71d01a49d83480de3b5293ce30c8",
+            "reference": "6ccd9289ec1c71d01a49d83480de3b5293ce30c8",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.9"
+        },
+        "conflict": {
+            "symfony/config": "<2.7"
+        },
+        "require-dev": {
+            "psr/log": "~1.0",
+            "symfony/config": "~2.7",
+            "symfony/intl": "~2.4",
+            "symfony/yaml": "~2.2"
+        },
+        "suggest": {
+            "psr/log": "To use logging capability in translator",
+            "symfony/config": "",
+            "symfony/yaml": ""
+        },
+        "time": "2015-10-27 15:38:06",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.7-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\Translation\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Translation Component",
+        "homepage": "https://symfony.com"
+    },
+    {
+        "name": "nesbot/carbon",
+        "version": "1.21.0",
+        "version_normalized": "1.21.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/briannesbitt/Carbon.git",
+            "reference": "7b08ec6f75791e130012f206e3f7b0e76e18e3d7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/7b08ec6f75791e130012f206e3f7b0e76e18e3d7",
+            "reference": "7b08ec6f75791e130012f206e3f7b0e76e18e3d7",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0",
+            "symfony/translation": "~2.6|~3.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.0|~5.0"
+        },
+        "time": "2015-11-04 20:07:17",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Carbon\\": "src/Carbon/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Brian Nesbitt",
+                "email": "brian@nesbot.com",
+                "homepage": "http://nesbot.com"
+            }
+        ],
+        "description": "A simple API extension for DateTime.",
+        "homepage": "http://carbon.nesbot.com",
+        "keywords": [
+            "date",
+            "datetime",
+            "time"
+        ]
+    },
+    {
+        "name": "khill/lavacharts",
+        "version": "dev-3.0-unstable",
+        "version_normalized": "dev-3.0-unstable",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/kevinkhill/lavacharts.git",
+            "reference": "6dbe9e5bec04bd0ae7d54fbfdc1cb59256030216"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/kevinkhill/lavacharts/zipball/6dbe9e5bec04bd0ae7d54fbfdc1cb59256030216",
+            "reference": "6dbe9e5bec04bd0ae7d54fbfdc1cb59256030216",
+            "shasum": ""
+        },
+        "require": {
+            "nesbot/carbon": "~1.14",
+            "php": ">=5.4.0"
+        },
+        "require-dev": {
+            "brianium/paratest": "~0.12",
+            "mockery/mockery": "~0.9",
+            "mybuilder/phpunit-accelerator": "~1.1",
+            "phpunit/phpunit": "~4.5",
+            "sami/sami": "~3.0",
+            "satooshi/php-coveralls": "dev-master",
+            "squizlabs/php_codesniffer": "~2.3"
+        },
+        "suggest": {
+            "khill/datatableplus": "Adds extra features to DataTables such as csv and laravel collection parsing."
+        },
+        "time": "2015-11-07 03:55:46",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Khill\\Lavacharts\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Kevin Hill",
+                "email": "kevinkhill@gmail.com",
+                "role": "Creator"
+            },
+            {
+                "name": "deringer",
+                "homepage": "https://github.com/deringer",
+                "role": "Contributor"
+            },
+            {
+                "name": "stevebauman",
+                "homepage": "https://github.com/stevebauman",
+                "role": "Contributor"
+            },
+            {
+                "name": "rajivseelam",
+                "homepage": "https://github.com/rajivseelam",
+                "role": "Contributor"
+            },
+            {
+                "name": "tobias-kuendig",
+                "homepage": "https://github.com/tobias-kuendig",
+                "role": "Contributor"
+            },
+            {
+                "name": "Stonos",
+                "homepage": "https://github.com/Stonos",
+                "role": "Contributor"
+            },
+            {
+                "name": "MicahKV",
+                "email": "micah138@yahoo.com",
+                "role": "Contributor"
+            }
+        ],
+        "description": "PHP wrapper library for the Google Chart API",
+        "homepage": "http://lavacharts.com",
+        "keywords": [
+            "charts",
+            "google",
+            "graphs"
+        ]
+    }
+]

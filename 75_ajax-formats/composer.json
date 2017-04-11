@@ -1,0 +1,5 @@
+{
+    "require": {
+        "khill/lavacharts":"dev-3.0-unstable"
+    }
+}
