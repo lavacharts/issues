@@ -1,5 +1,10 @@
 {
-    "require": {
-        "nesbot/carbon": "^1.21"
+  "autoload": {
+    "psr-4": {
+      "Khill\\Lavacharts\\": "/home/kevin/projects/lavacharts/lavacharts/src/"
     }
+  },
+  "require": {
+    "nesbot/carbon": "^1.22"
+  }
 }

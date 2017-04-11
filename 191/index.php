@@ -1,11 +1,12 @@
 <?php
 
-require('./vendor/autoload.php');
+require('../vendor/autoload.php');
 
 use Khill\Lavacharts\Lavacharts;
 
 $lava = new Lavacharts;
 
+$finances = $lava->DataTable();
 $finances->addDateColumn('Year')
          ->addNumberColumn('Sales')
          ->addNumberColumn('Expenses')
@@ -52,3 +53,21 @@ $lava->ComboChart('Finances', $finances, [
         ]
     ]
 ]);
+
+?>
+
+
+<html>
+<head>
+    <title>Multiple Charts</title>
+</head>
+<body>
+<?php
+    for ($a=1; $a <= 13; $a++) {
+        echo '<div id="chart-'.$a.'"></div>';
+
+        echo $lava->render('LineChart', 'chart-'.$a);
+    }
+?>
+</body>
+</html>
