@@ -11,11 +11,12 @@ $finances->addDateColumn('Year')
          ->addNumberColumn('Sales')
          ->addNumberColumn('Expenses')
          ->addNumberColumn('Total')
-         ->addRow(['2009-1-1', 1100, 490, 1590])
-         ->addRow(['2010-1-1', 1000, 400, 1400])
-         ->addRow(['2011-1-1', 1400, 450, 1850])
-         ->addRow(['2012-1-1', 1250, 600, 1850])
-         ->addRow(['2013-1-1', 1100, 550, 1650]);
+         ->addRoleColumn('number', 'annotation')
+         ->addRow(['2009-1-1', 1100, 490, 1590, 1590])
+         ->addRow(['2010-1-1', 1000, 400, 1400, 1400])
+         ->addRow(['2011-1-1', 1400, 450, 1850, 1850])
+         ->addRow(['2012-1-1', 1250, 600, 1850, 1850])
+         ->addRow(['2013-1-1', 1100, 550, 1650, 1650]);
 
 $lava->ComboChart('Finances', $finances, [
     'width' => 800,
@@ -32,7 +33,7 @@ $lava->ComboChart('Finances', $finances, [
             'format' => 'decimal',
             'title' => 'Rooms',
             'textStyle' => [
-                'color' => 'blue'
+                'color' => 'blue',
             ]
         ],
         [
@@ -49,7 +50,6 @@ $lava->ComboChart('Finances', $finances, [
             'type' => 'line',
             'color' => 'green',
             'fontSize' => 13,
-
         ]
     ]
 ]);
@@ -59,15 +59,12 @@ $lava->ComboChart('Finances', $finances, [
 
 <html>
 <head>
-    <title>Multiple Charts</title>
+    <title>ComboChart Customizing</title>
 </head>
 <body>
-<?php
-    for ($a=1; $a <= 13; $a++) {
-        echo '<div id="chart-'.$a.'"></div>';
 
-        echo $lava->render('LineChart', 'chart-'.$a);
-    }
-?>
+    <div id="chart"></div>
+    <?= $lava->render('ComboChart', 'Finances', 'chart'); ?>
+
 </body>
 </html>

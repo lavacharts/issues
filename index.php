@@ -17,8 +17,8 @@ $lava = new Lavacharts;
 </head>
 <body>
 
-    <div id="">
-    <?= $lava->render('', ''); ?>
+    <div id="chart">
+    <?= $lava->render('', '', 'chart'); ?>
 
 </body>
 </html>
