@@ -4,12 +4,11 @@ ISSUE="$1"
 
 if [ -z $ISSUE ]
 then
-  echo 'You must provide an issue #'
+  echo "You must provide an issue #"
   exit 2
 fi
 
-mkdir $ISSUE
+mkdir -v $ISSUE
 
-cp composer.json $ISSUE
-
-cp index.php $ISSUE
+cp -v composer.json "$ISSUE/"
+cp -v index.php "$ISSUE/"
