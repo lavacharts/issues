@@ -10,5 +10,6 @@ fi
 
 mkdir -v $ISSUE
 
-cp -v composer.json "$ISSUE/"
 cp -v index.php "$ISSUE/"
+
+cd $ISSUE
