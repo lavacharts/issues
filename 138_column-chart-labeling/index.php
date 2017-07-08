@@ -1,5 +1,4 @@
 <?php
-    require('../../lavacharts/src/Lavacharts.php');
     require('../vendor/autoload.php');
 
     $lava = new Khill\Lavacharts\Lavacharts;
