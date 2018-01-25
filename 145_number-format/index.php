@@ -1,17 +1,18 @@
 <?php
-    require('../../lavacharts/src/Lavacharts.php');
     require('../vendor/autoload.php');
 
     $lava = new Khill\Lavacharts\Lavacharts;
 
     $formatter = $lava->NumberFormat([
         'fractionDigit' => 2,
-        'suffix' => '%'
+        'suffix' => ' DOLLA BILLS!'
     ]);
 
-    $data = $lava->DataTable()
-        ->addDateColumn('Month')
-        ->addNumberColumn('Things', $formatter);
+    $data = $lava->DataTable();
+
+    $data->addDateColumn('Month');
+    $data->addNumberColumn('Things', $formatter);
+    $data->setDateTimeFormat('Y-m-d');
 
     $data->addRows([
         ['2015-1-1', rand(0,100)],
@@ -22,8 +23,12 @@
     ]);
 
     $lava->LineChart('Revenue', $data, [
+        'elementId' => 'perf_div',
         'width' => 600
     ]);
+
+    header('application/json');
+    echo $lava->getVolcano()->find('Revenue')->getDataTable()->toJavascript();
 ?>
 
 <html>
@@ -32,6 +37,6 @@
     </head>
     <body>
       <div id="perf_div"><i class="fa fa-spinner fa-pulse"></i></div>
-        <?= $lava->render('LineChart', 'Revenue', 'perf_div'); ?>
+        <?= $lava->renderAll(); ?>
     </body>
 </html>

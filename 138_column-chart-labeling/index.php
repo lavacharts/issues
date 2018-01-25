@@ -34,6 +34,6 @@
     </head>
     <body>
       <div id="perf_div"></div>
-        <?= $lava->render('ColumnChart', 'EWA', 'perf_div'); ?>
+        <?= $lava->renderAll(); ?>
     </body>
 </html>

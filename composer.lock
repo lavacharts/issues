@@ -4,9 +4,65 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3c8364a255325ea702830c897f09f332",
-    "content-hash": "7bd1ca6d7edbdb1237a1462a960e2d7c",
+    "content-hash": "df70d4cbb51b370c729ec67ef17261c1",
     "packages": [
+        {
+            "name": "league/period",
+            "version": "3.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/period.git",
+                "reference": "280b54d737b4d9d804d19f865a6496b82d1cee2a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/period/zipball/280b54d737b4d9d804d19f865a6496b82d1cee2a",
+                "reference": "280b54d737b4d9d804d19f865a6496b82d1cee2a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^1.10",
+                "phpunit/phpunit": "^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Period\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ignace Nyamagana Butera",
+                    "email": "nyamsprod@gmail.com",
+                    "homepage": "https://github.com/nyamsprod/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A time range immutable value object",
+            "homepage": "http://period.thephpleague.com",
+            "keywords": [
+                "date",
+                "dateinterval",
+                "dateperiod",
+                "datetime",
+                "interval",
+                "range",
+                "time"
+            ],
+            "time": "2017-11-17T11:28:33+00:00"
+        },
         {
             "name": "nesbot/carbon",
             "version": "1.21.0",
@@ -52,7 +108,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2015-11-04 20:07:17"
+            "time": "2015-11-04T20:07:17+00:00"
         },
         {
             "name": "symfony/translation",
@@ -112,7 +168,7 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
-            "time": "2015-10-27 15:38:06"
+            "time": "2015-10-27T15:38:06+00:00"
         }
     ],
     "packages-dev": [],

@@ -5,6 +5,7 @@
     }
   },
   "require": {
-    "nesbot/carbon": "~1.0"
+    "nesbot/carbon": "~1.0",
+    "league/period": "^3.4"
   }
 }
